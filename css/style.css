@@ -1,0 +1,944 @@
+
+/* estrutura do site
+------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Graphik-Regular', "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+
+:root { /* cores */
+    --roxo: #651cb8ec;
+    --lilas: rgb(167, 83, 235);
+    --branco: #fff;
+    --cinza: rgb(165, 162, 162);
+}
+
+
+/* formatações
+------------------------*/
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+
+
+/* area topo
+------------------------*/
+nav {
+    background: white;
+}
+
+
+nav li {
+    padding: 0 13px;
+    
+}
+
+nav div ul li a {
+    font-size: 17px;
+    color: black
+  
+}
+
+nav ul li a:hover {
+    color: var(--cinza);
+}
+
+
+span#login a {
+    color: var(--roxo);
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+span#login a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* area header
+------------------------*/
+header {
+    height: 100vh;
+    background: url(../images/header.webp) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-content {
+    width: 94%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    top: 180px;
+}
+
+.text-area {
+    width: 600px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.text-area h1 {
+    font-size: 3rem;
+}
+
+.text-area p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* area header
+------ Formulário -----*/
+form  {
+    width: 350px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 13px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form>label {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 5px;
+    margin-bottom: 55px;
+}
+
+form input {
+   padding-bottom: 10px; 
+   border: none;
+   font-size: 15px;
+}
+
+form button {
+    height: 50px;
+    margin: 40px 0 20px 0; 
+    border-radius: 50px;
+    border: none;
+    text-align: left;
+    text-indent: 20px;
+    cursor: pointer;
+}
+
+
+/* seção de conteúdos 
+
+/* seção 1
+------------------------*/
+section#postagem {
+    height: 100vh;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#postagem .cartao-credito {
+    width: 700px;
+    margin-left: 20px;
+}
+
+#postagem .cartao-credito h1 {
+    color: var(--roxo);
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#postagem .cartao-credito h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#postagem .cartao-credito a {
+    color: var(--roxo);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#postagem .cartao-credito a:hover {
+   text-decoration: underline;
+}
+
+#postagem .foto1 {
+    width: 500px;
+}
+
+#postagem .foto1 img {
+    width: 100%;
+    margin-left: 30px;
+}
+
+
+/* seção 2
+------------------------*/
+section#postagem2 {
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(240, 242, 245);
+}
+
+#postagem2 .nubank-ultravioleta {
+    width: 450px;
+    margin-left: 20px;
+    width: 700px;
+}
+
+#postagem2 .nubank-ultravioleta h1 {
+    color: var(--roxo);
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#postagem2 .nubank-ultravioleta h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#postagem2 .nubank-ultravioleta a {
+    color: var(--roxo);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#postagem2 .nubank-ultravioleta a:hover {
+    text-decoration: underline;
+}
+
+#postagem2 .foto2 {
+    width: 500px;
+    margin-left: 70px;
+}
+
+#postagem2 .foto2 img {
+    width: 100%;
+    margin-left: 10px;
+}
+
+
+/* seção 3
+------------------------*/
+section#postagem3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#postagem3 .conta {
+    width: 450px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+
+#postagem3 .conta h1 {
+    color: var(--roxo);
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#postagem3 .conta h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#postagem3 .conta a {
+    color: var(--roxo);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#postagem3 .conta a:hover {
+    text-decoration: underline;
+}
+
+#postagem3 .foto3 {
+    width: 500px;
+}
+
+#postagem3 .foto3 img {
+    width: 100%;
+    padding-left: 40%;
+}
+
+
+/* seção 4
+------------------------*/
+section#postagem4 {
+    height: 80vh;
+    padding: 100px;
+    background: rgb(77, 0, 128);
+}
+
+#area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#postagem4 .conta-pj {
+    width: 400px;
+}
+
+#postagem4 .conta-pj a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#postagem4 .conta-pj h1 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#postagem4 .conta-pj h2 {
+    font-size: 2.6em;
+    color: #ffffffd5;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#teste .conta-pj a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#postagem4 .conta-pj a:hover {
+    text-decoration: underline;
+}
+
+#postagem4 .foto3 {
+    width: 55%;
+}
+
+#postagem4 .foto3 img {
+    width: 400px;
+    float: right;
+}
+
+
+/* seção - CAPA 1
+------------------------*/
+section#capa1 {
+    height: 100vh;
+    background: url(../images/img5.jpeg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+
+#capa1 .text-area {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    color: #fff;
+}
+
+#capa1 .text-area h1 {
+    font-size: 50px;
+    margin-bottom: 20px ;
+}
+
+#capa1 .text-area a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#capa1 .text-area a:hover {
+    text-decoration: underline;
+}
+
+
+/* seção - CAPA 2
+------------------------*/
+section#capa2 {
+    height: 100vh;
+    background: url(../images/comunity.webp) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+#capa2 .text-area2 {
+    margin-left: 3%;
+    color: black;
+    width: 450px;
+}
+
+#capa2 .text-area2 h1 {
+    font-size: 3.0em;
+    margin-bottom: 30px;
+}
+
+#capa2 .text-area2 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+#capa2 .text-area2 a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* seção - CAPA 3
+------------------------*/
+section#capa3 {
+    height: 100vh;
+    background: url(../images/img7.webp) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#capa3 .text-area3 {
+    margin-left: 15%;
+    color: black;
+}
+
+#capa3 .text-area3 h1 {
+    font-size: 50px;
+    width: 43%;
+    margin-bottom: 30px;
+    color: #FFF;
+}
+
+#capa3 .text-area3 a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;;
+}
+
+#capa3 .text-area3 a:hover {
+    text-decoration: underline;
+}
+
+/* formatações footer
+------------------------*/
+footer {
+    background: rgba(0, 0, 0, 0.945);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footer-content {
+    width: 92%;
+    padding: 70px;
+}
+
+footer .style {
+    color: #fff;
+    font-size: 1.0em;
+    width: 100%;
+}
+
+footer .style ul {
+    margin-top: 40px;
+}
+
+footer .style li {
+    width: 100%;
+    margin-top: 11px;
+}
+
+footer .style li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer .style li a:hover {
+    color: var(--lilas);
+}
+
+/* 
+------- SEÇÃO A -------
+-*/
+section#secao-a {
+    display: flex;
+    justify-content: space-between;
+}
+
+#secao-a div {
+    width: 20%;
+}
+
+
+/* 
+------- SEÇÃO B -------
+*/
+section#secao-b {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#secao-b div {
+    width: 20%;
+}
+
+#secao-b .store {
+    width: 150px;
+    margin-top: 20px;
+}
+
+#secao-b .store img {
+    padding-top: 25px;
+    width: 150px;
+}
+
+
+/* 
+------- RODAPE -------
+*/
+ section#rodape {
+    margin: 150px 0;
+ }
+
+ #rodape .area-content {
+    align-items: center;
+    color: #FFF;
+ }
+
+ section#rodape img {
+    width: 4%;
+    height: 4%;
+ }
+
+ section#rodape p {
+    width: 50%;
+    margin-top: 20px;
+ }
+
+ 
+ /* media queries */
+
+ /* X-Small devices */
+  @media (max-width: 767.98px) {
+
+    header {
+        height: 900px;
+    }
+
+    #header-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 200px
+    }
+
+    .text-area {
+        width: 90%;
+    }
+
+    .text-area h1 {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .text-area p {
+        font-size: 1.1rem;
+    }
+
+    form {
+        width: 90%;
+        min-width: 130px;
+        max-width: 350px;
+        height: 290px;
+    }
+    section#postagem {
+        flex-direction: column;
+        margin-top: -90px;
+        min-height: 1000px;
+        width: 100%;
+        position: relative;
+    }
+    .text-area h1 {
+        font-size: 2.3rem;
+    }
+    .text-area h2 {
+        font-size: 2rem;
+    }
+    #postagem .cartao-credito {
+        width: 90%;
+        position: relative;
+        top: 40px;
+    }
+    #postagem .cartao-credito h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+    } 
+    #postagem .cartao-credito h2 {
+        font-size: 1.3rem;
+        width: 100%;
+        font-weight: bold;
+
+    }
+    #postagem .foto1 {
+        width: 90%;
+    }
+    #postagem .foto1 img {
+        max-height: 650px;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        left: -30px;
+    }
+
+    section#postagem2 {
+        flex-direction: column;
+        margin-top: -30px;  ;
+        min-height: 1000px;
+        width: 100%;
+        position: relative;
+    }
+    #postagem2 .nubank-ultravioleta {
+        width: 90%;
+        position: relative;
+        bottom: 80px;
+    }
+    #postagem2 .nubank-ultravioleta h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    #postagem2 .nubank-ultravioleta h2 {
+        font-size: 1.3rem;
+        width: 100%;
+        font-weight: bold;
+
+    }
+    #postagem2 .foto2 {
+        width: 90%;
+        position: relative;
+        bottom: 120px;
+    }
+    #postagem2 .foto2 img {
+        max-height: 650px;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        left: -40px;
+    }
+
+    section#postagem3 {
+        flex-direction: column;
+        margin-top: -30px;  
+        margin-bottom: -130px;
+        min-height: 1000px;
+        width: 100%;
+        position: relative;
+    }
+    #capa3 .text-area3 h1 {
+        width: 85%;
+    }
+    #postagem3 .conta {
+        width: 90%;
+        position: relative;
+    }
+    #postagem3 .conta h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+    }
+    #postagem3 .conta h2 {
+        font-size: 1.3rem;
+        width: 100%;
+        font-weight: bold;
+
+    }
+    #postagem3 .foto3 {
+        position: relative;
+        left: -100px;
+        bottom: 100px;
+    }
+    #postagem3 .foto3 img {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    section#postagem4 {
+        flex-direction: column;
+        margin-top: -30px;  
+        margin-bottom: -200px;
+        min-height: 1000px;
+        width: 100%;
+        min-width: 500px;
+    }
+    #postagem4 #area {
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+    }
+   
+
+    #postagem4 .conta-pj h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    #postagem4 .conta-pj h2 {
+        font-size: 1.3rem;
+        width: 100%;
+        font-weight: bold;
+
+    }
+    #postagem4 .foto3 {
+        position: relative;
+        left: 0;
+    }
+
+    #postagem4 .foto3 img {
+        position: relative;
+        left: 60px;
+        top: 35px;
+        width: 380px;
+    }
+
+    #capa1 .text-area h1 {
+        font-size: 1.8rem;
+    }
+
+    #capa2 .text-area2 h1 {
+        font-size: 1.8rem;
+    }
+
+    #capa3 .text-area3 h1 {
+        font-size: 1.8rem;
+    }
+
+    section#secao-a {
+        flex-direction: column;
+        position: relative;
+        right: 40px;
+    }
+    
+    section#secao-b {
+        flex-direction: column;
+        position: relative;
+        right: 40px;
+        width: 100%;
+    }
+    #secao-a .style {
+        width: 100%;
+    }
+
+    #secao-b .style {
+        width: 100%;
+    }
+    footer .style {
+        margin-bottom: 60px;
+        width: 100%;
+        min-width: 300px;
+    }
+    section#rodape {
+        margin: 0;
+    }
+    #rodape .area-content {
+        position: relative;
+        right: 35px;
+        width: 400px;
+    }
+    
+    section#rodape p {
+        width: 100%;
+    }
+}
+
+
+ 
+
+  /* Small devices */
+ /* @media (min-width: 576px) and (max-width: 767.98) { 
+    header {
+        overflow: hidden;
+        display: none;
+    }
+    #header-content {
+        height: 100vh;
+    }
+    
+ } */
+
+
+ /* Medium devices */
+ @media (min-width: 768px) and (max-width: 1023.98px) { 
+  
+    header {
+        min-height: 600px;
+    }
+    #header-content {
+        height: 50vh;
+    }
+    .text-area {
+        margin-bottom: 200px;
+    }
+    
+    form {
+        margin-top: 240px;
+        min-width: 20rem;
+        max-width: 20rem;
+    }
+    section#postagem {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    #postagem .foto1 img {
+        margin-left: 40px;
+        min-width: 250px;
+        max-width: 300px;
+    }
+
+    #postagem .cartao-credito h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+
+    }
+
+    #postagem .cartao-credito h2{
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    section#postagem2 {
+        height: auto;
+        padding-bottom: 70px;
+        padding-top: 50px;
+    }
+    #postagem2 .foto2 img {
+        max-width: 300px;
+        min-width: 250px;
+    }
+
+    #postagem2 .nubank-ultravioleta h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    #postagem2 .nubank-ultravioleta h2 {
+        font-size: 2.2rem;
+        font-weight: bold;
+
+    }
+
+    section#postagem3 {
+        height: 50vh;
+        padding-top: 300px;
+        padding-bottom: 300px;
+    }
+    #postagem3 .conta h1 {
+        font-weight: bold;
+
+    }
+    #postagem3 .conta h2 {
+        font-weight: bold;
+    }
+
+    section#postagem3 img {
+        padding-left: 200px;
+    }
+
+    section#postagem4 {
+        height: auto;
+    }
+
+    #postagem4 .foto3 img {
+        width: 80%;
+    }
+    section#secao-a {
+        flex-direction: column;
+        position: relative;
+        right: 40px;
+    }
+    
+    section#secao-b {
+        flex-direction: column;
+        position: relative;
+        right: 40px;
+        width: 100%;
+    }
+    #secao-a .style {
+        width: 100%;
+    }
+
+    #secao-b .style {
+        width: 100%;
+    }
+    footer .style {
+        margin-bottom: 60px;
+        width: 100%;
+        min-width: 300px;
+    }
+    section#rodape {
+        margin: 0;
+    }
+    #rodape .area-content {
+        position: relative;
+        right: 35px;
+        width: 400px;
+    }
+    
+    section#rodape p {
+        width: 100%;
+    }
+  }
+ 
+/* Large devices */
+ @media (min-width: 1024px) and (max-width: 1399.98px) { 
+   
+}
+
+   
+/* X-large devices */
+ @media (min-width: 1440px) {
+    #header-content {
+        display: flex;
+        justify-content: space-around;
+    }
+   }
+ 
