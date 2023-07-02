@@ -558,6 +558,9 @@ section#secao-b {
  /* X-Small devices */
   @media (max-width: 767.98px) {
 
+    body {
+        overflow-x: hidden;
+    }
     header {
         height: 900px;
     }
@@ -566,7 +569,7 @@ section#secao-b {
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 200px
+        top: 200px;
     }
 
     .text-area {
