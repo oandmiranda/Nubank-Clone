@@ -10,6 +10,7 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     font-family: 'Graphik-Regular', "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    overflow-x: hidden;
 }
 
 
@@ -75,8 +76,10 @@ span#login a:hover {
 /* area header
 ------------------------*/
 header {
+    width: 100%;
     height: 100vh;
-    background: url(../images/header.webp) no-repeat center;
+    object-fit: cover;
+    background: url(../images/header-imagem.webp) no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -84,23 +87,23 @@ header {
 }
 
 #header-content {
-    width: 94%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 40px;
     position: relative;
-    top: 180px;
+    top: 110px;
 }
 
 .text-area {
-    width: 600px;
+    width: 520px;
     color: #fff;
     margin-bottom: 35px;
 }
 
 .text-area h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    font-weight: 600;
 }
 
 .text-area p {
@@ -200,7 +203,6 @@ section#postagem {
 ------------------------*/
 section#postagem2 {
     height: 100vh;
-    padding-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -301,7 +303,7 @@ section#postagem3 {
 ------------------------*/
 section#postagem4 {
     height: 80vh;
-    padding: 100px;
+    padding: 50px;
     background: rgb(77, 0, 128);
 }
 
@@ -313,6 +315,7 @@ section#postagem4 {
 
 #postagem4 .conta-pj {
     width: 400px;
+    margin-bottom: 50px;
 }
 
 #postagem4 .conta-pj a:hover {
@@ -346,11 +349,12 @@ section#postagem4 {
 }
 
 #postagem4 .foto3 {
-    width: 55%;
+    width: 500px;
+    margin-bottom: 50px;
 }
 
 #postagem4 .foto3 img {
-    width: 400px;
+    width: 350px;
     float: right;
 }
 
@@ -705,42 +709,29 @@ section#secao-b {
     }
 
     section#postagem4 {
-        flex-direction: column;
-        margin-top: -30px;  
-        margin-bottom: -200px;
-        min-height: 1000px;
-        width: 100%;
+        display: flex;
         min-width: 500px;
+
     }
     #postagem4 #area {
-        display: flex;
-        width: 100%;
-        position: relative;
+        padding-top: 100px;
         flex-direction: column;
     }
-   
 
     #postagem4 .conta-pj h1 {
-        width: 100%;
         font-size: 1.8rem;
         font-weight: bold;
     }
     #postagem4 .conta-pj h2 {
         font-size: 1.3rem;
-        width: 100%;
         font-weight: bold;
 
     }
     #postagem4 .foto3 {
-        position: relative;
-        left: 0;
-    }
-
-    #postagem4 .foto3 img {
-        position: relative;
-        left: 60px;
-        top: 35px;
-        width: 380px;
+        padding-bottom: 200px;
+        width: 360px;
+        height: 270px;
+        margin-bottom: 100px;
     }
 
     #capa1 .text-area h1 {
@@ -819,7 +810,10 @@ section#secao-b {
         height: 50vh;
     }
     .text-area {
-        margin-bottom: 200px;
+        margin-bottom: 100px;
+    }
+    .text-area h1{
+        font-size: 2rem;
     }
     
     form {
@@ -891,7 +885,7 @@ section#secao-b {
     }
 
     #postagem4 .foto3 img {
-        width: 80%;
+        width: 340px;
     }
     section#secao-a {
         flex-direction: column;
@@ -932,9 +926,9 @@ section#secao-b {
   }
  
 /* Large devices */
- @media (min-width: 1024px) and (max-width: 1399.98px) { 
+ /* @media (min-width: 1024px) and (max-width: 1399.98px) { 
    
-}
+} */
 
    
 /* X-large devices */
